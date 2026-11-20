@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Connections Unlimited: Free Unlimited Puzzles | UBGWeb</title>
+<meta name="description" content="Play Connections Unlimited free. Group 16 words into four hidden categories, then start a new puzzle instantly. Hundreds of words, no sign-up, works on mobile.">
+<meta name="keywords" content="connections unlimited, unlimited connections game, connections puzzle, connections unblocked, play connections free, word grouping game">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#7C5CFF">
+<link rel="canonical" href="https://ubgweb.github.io/connections-unlimited/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UBGWeb">
+<meta property="og:title" content="Connections Unlimited: Free Unlimited Puzzles">
+<meta property="og:description" content="Group 16 words into four hidden categories. Unlimited puzzles, no sign-up.">
+<meta property="og:url" content="https://ubgweb.github.io/connections-unlimited/">
+<meta property="og:image" content="https://ubgweb.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Connections Unlimited | UBGWeb">
+<meta name="twitter:description" content="Play as many Connections puzzles as you like. Free, fast and mobile friendly.">
+<meta name="twitter:image" content="https://ubgweb.github.io/assets/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/game.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[
+{"@type":"WebApplication","name":"Connections Unlimited","url":"https://ubgweb.github.io/connections-unlimited/","description":"A free word grouping puzzle with unlimited puzzles. Sort 16 words into four hidden categories.","applicationCategory":"GameApplication","genre":"Word puzzle","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript","inLanguage":"en","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"isPartOf":{"@type":"WebSite","name":"UBGWeb","url":"https://ubgweb.github.io/"}},
+{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ubgweb.github.io/"},{"@type":"ListItem","position":2,"name":"Connections Unlimited","item":"https://ubgweb.github.io/connections-unlimited/"}]}
+]}</script>
+</head>
+<body>
+<site-header></site-header>
+<main>
+
+<!-- 1 Game -->
+<section class="ghero" id="play">
+ <div class="blob b1"></div><div class="blob b2"></div>
+ <div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / Connections Unlimited</nav>
+  <h1>Connections Unlimited</h1>
+  <p class="lead">Find four groups of four related words. Finish a puzzle, then start another one right away. No daily limit.</p>
+  <div class="stage">
+   <p id="msg" role="status" aria-live="polite"></p>
+   <div id="board"></div>
+   <div class="mist"><span>Mistakes left</span><span id="dots" role="img"></span></div>
+   <div class="ctl">
+    <button class="btn alt" id="shuffle" type="button">Shuffle</button>
+    <button class="btn alt" id="clear" type="button">Deselect all</button>
+    <button class="btn" id="submit" type="button" disabled>Submit</button>
+    <button class="btn" id="again" type="button" hidden>New puzzle</button>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 2 How to play -->
+<section class="tint" id="how" aria-labelledby="h-how">
+ <div class="wrap">
+  <div class="head"><h2 id="h-how">How to play Connections Unlimited</h2><p class="lead">Each puzzle hides four groups of four words that share something in common.</p></div>
+  <div class="steps">
+   <div class="box"><h3>Select four words</h3><p>Tap four tiles you think belong together. Tap a selected tile again to remove it.</p></div>
+   <div class="box"><h3>Press Submit</h3><p>If you are right, the group is revealed with its category and a color.</p></div>
+   <div class="box"><h3>Watch your mistakes</h3><p>You can make three wrong guesses. The fourth ends the puzzle. "One away" means three of your four words are correct.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- 3 Difficulty colors -->
+<section aria-labelledby="h-col">
+ <div class="wrap">
+  <div class="head"><h2 id="h-col">What the four colors mean</h2><p class="lead">Every puzzle has one group from each difficulty level.</p></div>
+  <div class="feat">
+   <div class="box"><div class="sw" style="background:#FFC93C"></div><h3>Yellow: easiest</h3><p>Everyday groups such as fruits, pets or sports.</p></div>
+   <div class="box"><div class="sw" style="background:#2ED8A3"></div><h3>Green: medium</h3><p>Specific groups such as cheeses, rivers or card games.</p></div>
+   <div class="box"><div class="sw" style="background:#3BA7FF"></div><h3>Blue: tricky</h3><p>Groups built on a shared feature, like things with keys or rings.</p></div>
+   <div class="box"><div class="sw" style="background:#7C5CFF"></div><h3>Purple: wordplay</h3><p>Fill-in-the-blank links such as ___ ball or Fire___.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- 4 Why unlimited -->
+<section class="tint" id="why" aria-labelledby="h-why">
+ <div class="wrap">
+  <div class="head"><h2 id="h-why">Why play Connections Unlimited</h2></div>
+  <div class="feat">
+   <div class="box"><h3>New puzzles every time</h3><p>Every puzzle is built fresh from a bank of <span data-words>0</span> words across <span data-cats>0</span> categories.</p></div>
+   <div class="box"><h3>No sign-up</h3><p>Open the page and play. Your stats stay in your own browser.</p></div>
+   <div class="box"><h3>Built for mobile</h3><p>Large tiles and text that scales to fit small screens.</p></div>
+   <div class="box"><h3>Practice friendly</h3><p>Miss a puzzle? Start another one and sharpen your pattern spotting.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- 5 Tips -->
+<section aria-labelledby="h-tips">
+ <div class="wrap">
+  <div class="head"><h2 id="h-tips">Tips to solve more puzzles</h2></div>
+  <div class="tips">
+   <div class="box" style="--c:#FFC93C"><p><strong>Start with the obvious group.</strong> Clearing the easiest set shrinks the board and makes the rest clearer.</p></div>
+   <div class="box" style="--c:#2ED8A3"><p><strong>Look for red herrings.</strong> A word can fit two groups. Count how many words fit each idea before you commit.</p></div>
+   <div class="box" style="--c:#3BA7FF"><p><strong>Think about parts and features.</strong> Words like bridge, keys or rings often link objects that have them.</p></div>
+   <div class="box" style="--c:#7C5CFF"><p><strong>Try adding a word before or after.</strong> If four words all combine with the same one, you have found a wordplay group.</p></div>
+   <div class="box" style="--c:#FF5C93"><p><strong>Use Shuffle.</strong> A new tile order can reveal connections that were hidden by position.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- 6 Word bank -->
+<section class="tint" id="words" aria-labelledby="h-bank">
+ <div class="wrap">
+  <div class="head"><h2 id="h-bank">Inside the word bank</h2><p class="lead">Connections Unlimited draws from <span data-words>0</span> words in <span data-cats>0</span> categories. Here is every category by difficulty.</p></div>
+  <div class="feat" id="bank"></div>
+ </div>
+</section>
+
+<!-- 7 Stats -->
+<section aria-labelledby="h-stats">
+ <div class="wrap">
+  <div class="head"><h2 id="h-stats">Your stats</h2><p class="lead">Saved only in this browser, so they stay private.</p></div>
+  <div id="stats"></div>
+ </div>
+</section>
+
+<!-- 8 FAQ -->
+<section class="tint" id="faq" aria-labelledby="h-faq">
+ <div class="wrap faq">
+  <div class="head"><h2 id="h-faq">Connections Unlimited FAQ</h2></div>
+  <details><summary>What is Connections Unlimited?</summary><p>It is a word grouping puzzle where you sort 16 words into four hidden categories. Unlike a daily puzzle, you can play as many puzzles as you want.</p></details>
+  <details><summary>How many puzzles can I play?</summary><p>As many as you like. Each puzzle is generated from our word bank, so a new one is always one click away.</p></details>
+  <details><summary>How many mistakes are allowed?</summary><p>You can make three mistakes. The fourth wrong guess ends the puzzle and reveals the answers.</p></details>
+  <details><summary>What does "one away" mean?</summary><p>Three of the four words you picked belong to the same group. Swap one word and try again.</p></details>
+  <details><summary>Do I need an account or download?</summary><p>No. The game runs in your browser and your stats are saved only on your device.</p></details>
+  <details><summary>Does it work on mobile?</summary><p>Yes. The board and buttons are sized for phones and tablets, and it also works with a keyboard and mouse.</p></details>
+  <details><summary>Is it affiliated with The New York Times?</summary><p>No. Connections Unlimited is an independent fan project and is not affiliated with The New York Times.</p></details>
+ </div>
+</section>
+
+<!-- 9 More games -->
+<section aria-labelledby="h-more">
+ <div class="wrap">
+  <div class="head"><h2 id="h-more">More unlimited games</h2><p class="lead">Love word puzzles? Try these next.</p></div>
+  <div class="grid" id="more"></div>
+  <p style="text-align:center;margin-top:40px"><button class="btn" id="again2" type="button">Play another puzzle</button></p>
+ </div>
+</section>
+
+</main>
+<site-footer></site-footer>
+<script src="/js/games.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/footer.js"></script>
+<script src="/js/connections-words.js"></script>
+<script src="/js/connections.js"></script>
+</body>
+</html>
